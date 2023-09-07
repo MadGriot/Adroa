@@ -1,7 +1,7 @@
 pub struct CharacterStats {
     attributes: attr_parameters,
     skills: skills_parameters,
-    psychic_skills: phychic_skills_parameters,
+    psychic_skills: psychic_skills_parameters,
     background: BackgroundType,
     class: ClassType,
     foci: FocusType,
@@ -38,7 +38,7 @@ pub struct skills_parameters {
     work: f64,
 }
 
-pub struct phychic_skills_parameters {
+pub struct psychic_skills_parameters {
     biopsionics: f64,
     metapsionics: f64,
     precognition: f64,
