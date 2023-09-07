@@ -1,4 +1,4 @@
-struct CharacterStats {
+pub struct CharacterStats {
     attributes: attr_parameters,
     skills: skills_parameters,
     psychic_skills: phychic_skills_parameters,
@@ -7,7 +7,7 @@ struct CharacterStats {
     foci: FocusType,
 }
 
-struct attr_parameters {
+pub struct attr_parameters {
     strength: f64,
     dexterity: f64,
     constitution: f64,
@@ -16,7 +16,7 @@ struct attr_parameters {
     charisma: f64,
 }
 
-struct skills_parameters {
+pub struct skills_parameters {
     administer: f64,
     connect: f64,
     exert: f64,
@@ -38,7 +38,7 @@ struct skills_parameters {
     work: f64,
 }
 
-struct phychic_skills_parameters {
+pub struct phychic_skills_parameters {
     biopsionics: f64,
     metapsionics: f64,
     precognition: f64,
@@ -47,7 +47,7 @@ struct phychic_skills_parameters {
     teleportation: f64,
 }
 
-enum BackgroundType {
+pub enum BackgroundType {
     Barbarian,
     Clergy,
     Courtesan,
@@ -70,14 +70,14 @@ enum BackgroundType {
     Worker,
 }
 
-enum ClassType {
+pub enum ClassType {
     Expert {level: i8},
     Psychic {level: i8},
     Warrior {level: i8},
     Adventurer {level: i8},
 }
 
-enum FocusType {
+pub enum FocusType {
     Alert {level: i8 },
     Armsman {level: i8 },
     Assassin {level: i8},
